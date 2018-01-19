@@ -4,6 +4,7 @@
 
 .insert-pnx1
 {
+    border-radius: 4px;
     position: absolute;
     left: 27%;
     transform: translateX(-50%);
@@ -15,10 +16,11 @@
     padding: 10px;
     width: 450px;
     text-transform: none;
-    border: 4px solid #cccccc;
+    border: 2px solid #cccccc;
 }
 .insert-pnx2
 {
+    border-radius: 4px;
     position: absolute;
     left: 75%;
     transform: translateX(-50%);
@@ -30,9 +32,27 @@
     padding: 10px;
     width: 450px;
     text-transform: none;
-    border: 4px solid #cccccc;
+    border: 2px solid #cccccc;
 }
 
+.insert-pnx2:focus {
+    outline:none;
+    border: 1px solid #4195fc;
+    /* create a BIG glow */
+    box-shadow: 0px 0px 9px #4195fc;
+    -moz-box-shadow: 0px 0px 9px #4195fc;
+    -webkit-box-shadow: 0px 0px 9px #4195fc;
+
+}
+.insert-pnx1:focus {
+    outline:none;
+    border: 1px solid #4195fc;
+    /* create a BIG glow */
+    box-shadow: 0px 0px 9px #4195fc;
+    -moz-box-shadow: 0px 0px 9px #4195fc;
+    -webkit-box-shadow: 0px 0px 9px #4195fc;
+
+}
 
 .final-score:focus { outline: none; }
 
@@ -80,7 +100,7 @@ body {
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 600px;
+    height: 500px;
     padding: ;
 }
 
@@ -90,18 +110,51 @@ body {
 *** PLAYERS
 **********************************************/
 
-.Record-name {
+.Record-1 {
     color:black;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-transform: none;
     letter-spacing: 1px;
-    top: 65px;
+    top: 50px;
+    left: -182px;
     margin-top: 15px;
     margin-bottom: 10px;
     position: relative;
     background-color:;
+
+}
+
+.Record-2 {
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+    top: 12px;
+    left: -685px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color:;
+
+}
+
+.title {
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+    top: 5px;
+    left: -30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+
 
 }
 

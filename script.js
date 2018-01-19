@@ -434,8 +434,8 @@ function messageBox(xxx){
     mainBox.style.display = 'block';
     //mainBox.stye.color = 'red';
     $('.message-box').append(xxx + "\n");
-    $('.player-0-panel').text(record1.recordid);
-    $('.player-1-panel').text(record2.recordid);
+    $('.Record-1').text(record1.recordid);
+    $('.Record-2').text(record2.recordid);
 
 
 
@@ -1079,12 +1079,13 @@ document.querySelector('.btn-reset').addEventListener('click', function() {
    document.querySelector('.insert-pnx2').value = '';
 
     $('.message-box').text("");
+    $('.message-box').css('display', 'none');
     $('.message-box').css('height', 120+'px');
     $('.message-box').css('top', 430+'px');
     $('.wrapper').css('height', 100 +'vh');
     $('body').css('height', $('.wrapper').height());
-    $('.player-0-panel').text("Record 1");
-    $('.player-1-panel').text("Record 2");
+    $('.Record-1').text("Record 1");
+    $('.Record-1').text("Record 2");
     record1 = '';
     record2 = '';
     PNX1 ='';
@@ -1097,12 +1098,13 @@ document.querySelector('.btn-reset').addEventListener('click', function() {
 
 document.querySelector('.btn-copy').addEventListener('click', function() {
     $('.message-box').text("");
+    $('.message-box').css('display', 'none');
     $('.message-box').css('height', 120+'px');
     $('.message-box').css('top', 430+'px');
     $('.wrapper').css('height', 100 +'vh');
     $('body').css('height', $('.wrapper').height());
-    $('.player-0-panel').text("Record 1");
-    $('.player-1-panel').text("Record 2");
+    $('.Record-1').text("Record 1");
+    $('.Record-1').text("Record 2");
     record1 = '';
     record2 = '';
     PNX1 ='';
