@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record>
+<sourceid>medline</sourceid> 
+<recordid>record 2</recordid> 
+<frbr>
+<t>2</t> 
+<k1>2011</k1> 
+<k2>00956562</k2> 
+<k3>55</k3>
+<k4>worng</k4> 
+<k5>8</k5> 
+<k6>835</k6> 
+<k7>viation space environmental medicine</k7> 
+<k8>this month in aerospace medicine history</k8> 
+<k9>thismonthinaerospacestory</k9> 
+<k10>21853866</k10> 
+<k11>44</k11>
+<k12>wrong</k12> 
+</frbr>
+
+
+<?xml version="1.0" encoding="UTF-8"?><record>
+<sourceid>medline</sourceid> 
+<recordid>record 2</recordid> 
+<frbr>
+<t>3</t> 
+<k1>2011</k1> 
+<k2>00956562</k2> 
+<k3>55</k3>
+<k4>worng</k4> 
+<k5>8</k5> 
+<k6>835</k6> 
+<k7>viation space environmental medicine</k7> 
+<k8>this month in aerospace medicine history</k8> 
+<k9>thismonthinaerospacestory</k9> 
+<k10>21853866</k10> 
+<k11>44</k11>
+<k12>wrong</k12> 
+</frbr>

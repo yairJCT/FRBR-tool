@@ -1,0 +1,119 @@
+﻿First Goals:
+
+1. Insert box to PNX - for two records.
+
+General code:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+R1 = {PNX string of record 1}
+R2 = {PNX string of record 2}
+
+// enum
+
+var DATA = {
+   date : {value: k1 , name: "date"}, 
+   ISSN: {value: k2, name: "ISSN"}, 
+   DOI : {value: k3, name: "DOI"}, 
+   volume : {value: k4, name: "volume"}, 
+   issue : {value: k5, name: "issue"}, 
+  1st author : {value: k6, name: "1st author"}, 
+   inverted 1st author : {value: k7, name: "inverted 1st author"}, 
+   full btitle : {value: k8, name: "full btitle"}, 
+   brief btitle : {value: k9, name: "brief btitle"}, 
+   PMID : {value: k10, name: "PMID"}, 
+   ERIC+brief : {value: k11, name: "ERIC+brief"}, 
+   brief title V2 : {value: k12, name: "brief title V2"}, 
+   brief ERIC : {value: k13, name: "ERIC"}, 
+   brief SICI : {value: k14, name: "SICI"}, 
+};
+
+ // check <t> for each record.
+
+if R1[<t1>] != R2[<t2>]     
+        throw 'FRBR type aren't identical'
+
+else if(<t> == 99)
+        throw 'FRBR type not for grouping'
+		
+else
+{
+// comb == Key combination
+bool comb[13] = {false}
+bool key1[13] = {false} 
+bool key2[13] = {false} 
+bool matchBy[13] = {false}
+
+for i = 0 to 13
+   if(R1[<k(i+1)>] exists)
+       key1[ i ] = true 
+
+if(R2[<k(i+1)>] exists)
+    key2[ i ] = true
+       end loop
+
+// check for identical Key combination
+
+for i = 0 to 13
+   if( key2[ i ] or key1[ i ] != exist)
+      continue
+
+	if(key1 == key2)
+	   comb[ i ] = true
+	   
+end loop
+
+switch(<t>) 
+
+
+
+case 2:
+
+// k12 true
+if(comb[11]) 
+{
+    matchBy[11] = true
+    if(comb[2]) {
+             matchBy[2] = true
+             printMatch(matchBy)
+     else if (comb[9]){
+	         matchBy[9] = true
+			 printMatch(matchBy)
+     else if (comb[10]){
+	         matchBy[10] = true
+			 printMatch(matchBy)
+    else if (comb[12]){
+	         matchBy[12] = true
+			 printMatch(matchBy)
+    else if (comb[13]){
+	         matchBy[13] = true
+			 printMatch(matchBy)
+			 
+}
+
+
+if(comb[1]*comb[8]*comb[3]*comb[4]) == true
+   throw("match by" + Data.2+Data.9+Data.4+Data.5)
+
+case 3
+
+
+case 99 
+
+
+
+end switch
+
+}
+
+function recommend() {
+
+
+}
+
+function printMatch( int keys[ ] ) {
+
+
+}
+
+
